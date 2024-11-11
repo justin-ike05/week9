@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Task Solutions</h1>
+    <ul>
+        <li id="item1">Solution for question 1</li>
+        <li id="item2">Solution for question 2</li>
+        <li id="item3">Solution for question 3</li>
+        <li id="item4">Solution for question 4</li>
+        <li id="item5">Solution for question 5</li>
+        <li id="item6">Solution for question 6</li>
+        <li id="item7">Solution for question 7</li>
+        <li id="item8">Solution for question 8</li>
+        <li id="item9">Solution for question 9</li>
+        <li id="item10">Solution for question 10</li>
+        <li id="item11">Solution for question 11</li>
+        <li id="item12">Solution for question 12</li>
+        <li id="item13">Solution for question 13</li>
+        <li id="item14">Solution for question 14</li>
+        <li id="item15">Solution for question 15</li>
+        <li id="item16">Solution for question 16</li>
+        <li id="item17">Solution for question 17</li>
+        <li id="item18">Solution for question 18</li>
+    </ul>
+    
+    <!-- Javascript Solutions -->
+     <script>
+        const numbers = [12, 5, 8, 130, 44, 2, 17, 9, 33, 105, 68, 72, 19];
+        
+        const greaterThanTwenty = numbers.filter(num => num > 20)
+        document.getElementById("item1").textContent = `Numbers > 20: ${greaterThanTwenty.join(", ")}`;
+
+        const multipliedByTwo = numbers.map(num => num * 2)
+        document.getElementById("item2").textContent = `Numbers * 2: ${multipliedByTwo.join(", ")}`;
+
+        const sortDescending = numbers.sort ((a, b) => b - a);
+        document.getElementById("item4").textContent = `Sorted in descending order: ${sortedDescending.join(", ")}`;
+
+        const firstGreaterThanFifty = numbers.find(num => num > 50)
+        document.getElementById("item5").textContent = `Numbers > 50: ${firstGreaterThanFifty.join(", ")}`;
+     </script>
+</body>
+</html>
